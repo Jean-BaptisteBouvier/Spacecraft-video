@@ -1,0 +1,32 @@
+% The chaser satellite takes a picture of the target satellite
+
+
+function plot_picture(chaser, target)
+
+x_chaser = chaser.position(1);
+y_chaser = chaser.position(2);
+z_chaser = chaser.position(3);
+
+x_target = target.position(1);
+y_target = target.position(2);
+z_target = target.position(3);
+
+sat_dist = norm( chaser.position - target_position ); % distance between satellites
+
+target_z_radius = 1.1*target.z_len/2;
+
+ 
+
+%%% Camera flash
+[X_flash, Y_flash, Z_flash] = cylinder( [chaser.camera_rad, target_z_radius]); % Define a cone for the flash
+X_flash = X_flash + x;
+Y_flash = Y_flash + y;
+Z_flash = Z_flash*sat_dist + chaser.x_len/2 + chaser.camera_len;
+faint_scale = 0.9*(1-Z_flash); % transparency scale for the flash
+
+flash = mesh(X_flash, Y_flash, Z_flash, 'FaceColor',spacecraft.plume_color(5,:),'EdgeColor','none', 'AlphaData', faint_scale, 'FaceAlpha','interp');
+rotate(flash, [0 1 0], 90, [x,y,z])
+rotate(flash, [0 0 1], -45, [x+x_len/2,y-y_len/2,z])
+rotate(flash, [0 0 1], theta, [x,y,z])
+
+end
