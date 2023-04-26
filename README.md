@@ -23,6 +23,12 @@ The chaser satellite follows the tracking trajectory saved in the data folder. T
 
 ## Results
 
+At the first waypoint, the chaser satellite takes a picture of the target satellite for inspection.
+![spacecraft inspection](video frames/spacecraft_pic.jpg)
+
+![spacecraft inspection](video frames/spacecraft_far.jpg)
+
+![spacecraft inspection](video frames/spacecraft_pic_2.jpg)
 
 
 ## Contributors
