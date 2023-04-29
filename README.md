@@ -1,7 +1,7 @@
 # Spacecraft video
 
 This repository gathers MATLAB codes to generate spacecraft videos illustrating the resilient orbital inspection mission of the [Spacecraft-Resilience](https://github.com/Jean-BaptisteBouvier/Spacecraft-Resilience) project.
-
+The video is available on [Youtube](https://youtu.be/DQy8iNHyt7M).
 
 
 
