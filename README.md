@@ -33,9 +33,14 @@ The reference trajectory is shown in green, while the actual trajectory of the m
 After reaching the second waypoint, the chaser satellite takes another picture of the target satellite for inspection.
 ![spacecraft inspection](frames/spacecraft_pic_2.jpg)
 
+The full video is available on Youtube:
+<iframe width="685" height="348"
+  src="https://www.youtube.com/embed/DQy8iNHyt7M">
+</iframe>
+
 
 An accelerated version of the video in gif format
-![video](frames/gif_video.gif)
+![video](frames/spacecraft_gif.gif)
 
 ## Contributors
 
